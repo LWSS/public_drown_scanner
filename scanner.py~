@@ -416,4 +416,5 @@ if __name__ == '__main__':
 if not vulnPorts: # if no vulnPorts
     print "You're good, Fam."
 if vulnPorts:
-    print "\n\nVuln Ports = ".join([str(port) for port in PORT_LIST] )
+    print 'Vulnerable Ports Found'
+    print '[%s]' % ', '.join(map(str, mylist))

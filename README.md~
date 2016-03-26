@@ -119,15 +119,7 @@ bin/pip install enum pycrypto scapy pyasn1 scapy-ssl_tls pcapy
 Usage examples:
 ---------------
 ```
-python scanner.py localhost 443
-...
-python scanner.py localhost 587 -esmtp
-...
-python scanner.py localhost 143 -imap
-...
-python scanner.py localhost 25 -esmtp
-...
-python scanner.py localhost 110 -pop3
-...
-python scanner.py localhost 443 -bare
-````
+python scanner.py localhost 
+python scanner.py 123.45.67.8
+python scanner.py subdomain.swag.com
+python scanner.py topdog.co.uk

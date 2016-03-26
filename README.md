@@ -1,6 +1,20 @@
 DROWN Scanner
 =============
 
+**Modified to Do the following Ports Automatically**
+```
+ 443, 587, 143, 25, 110, 995, 993, 465, 3389, 1433, 10022, 22, 4444, 14444, 10000, 20000, 2087, 2083, 2086, 2087, 2096, 7777 
+```
+
+
+Usage is also changed e.g. ( see more possible examples at bottom )
+```
+python scanner.py domain.com
+```
+
+
+
+
 **Important: Some versions of this tool produce the following lines on startup:**
 
 ```

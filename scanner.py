@@ -294,12 +294,13 @@ def sslv2_connect(ip, port, protocol, cipher_suite, result_additional_data):
         s.close()
         return "3b: %s" % NO_TLS
 
-    server_hello = timeout(SSL, (server_hello_raw,), timeout_duration=SOCKET_TIMEOUT)
+    server_hello = timeout(SSL, (server_hello_raw,), timeout_duration=5)
     if server_hello == None:
         print '%s: Case 3c; Timeout on parsing server hello' % ip
         s.close()
         return "3c: %s" % NO_TLS
-
+    print 'server_hello_raw: '
+    SSL(server_hello_raw).show()
     if not SSLv2ServerHello in server_hello:
         print '%s: Case 3d; Server hello did not contain SSLv2' % ip
         s.close()
